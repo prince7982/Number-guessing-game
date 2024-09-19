@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- ----------navbar------------- -->
+    <header>
+        <a href="" class="logo"><span>G</span>aming Zone</a>
+
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rules">Rules</a></li>
+            <li><a href="#about">Start Game</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="top-btn">Download Game</a>
+    </header>
+
+    <!-- ------------home--------------- -->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="photo/gif4.gif" alt="">
+        </div>
+        <div class="home-text">
+            <h3>Guess</h3>
+            <h1>The Number....</h1>
+            <a href="#about" class="btn">Start Game</a>
+        </div>
+    </section>
+
+    <section id="rules">
+        <div class="rules_container">
+            <h1>Rules</h1>
+            <div class="rule_content">
+                <div class="col1">
+                    <ul>
+                        <li>This is a Number Guessing Game.</li>
+                        <li>In this Game System Generates Random Number.</li>
+                        <li>If The Number is Same That the random number.</li>
+                        <li>You won the Game Otherwise You Lossed the Game.</li>
+                        <li>Player Get only 5 chances...</li>
+                        <li>If The Chances Left 0 then you lost the Game.</li>
+                    </ul>
+                </div>
+                <div class="col2">
+                    <img src="photo/gif3.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- --------------game part------------ -->
+    <section id="about">
+        <div class="container">
+            <div class="container-wrapper">
+                <button type="button" class="btn1 btn-again">Play Again</button>
+                <p>Between 1 to 10</p>
+            </div>
+            <h2>Guess My Number Game</h2>
+            <p class="hide_num">?</p>
+            <p class="message">Start Guessing..........</p>
+
+            <div class="number_data">
+                <form>
+                    <input type="number" placeholder="Enter Your Number!" class="input_number">
+                    <button type="button" class="btn1 btn_check">Check Now !</button>
+                </form>
+
+                <div class="content">
+                    <p>Count : <span class="score">5</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+                
+                   <!-- -------contact-------------- -->
+    <section id="contact">
+        <div class="contact_container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>princekumar13810@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7982431046</p>
+                    <div class="social_icons_contact">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact_right">
+                    <form>
+                        <input class="contact-input" type="text" name="Name" placeholder="Your Name" required>
+                        <input class="contact-input " type="email" name="email" placeholder="Your Mail" required>
+                        <textarea class="contact-textarea" name="message" rows="6" placeholder="Your Message" id=""></textarea>
+                        <button type="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>Copyright © Prince.<i class="fa-solid fa-heart"></i></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
